@@ -1,0 +1,12 @@
+Lifecycle owner component : UI components like activities / fragments
+Lifecycle : the life cycle data structure, which can be observed, provided by lifecycle owener
+Lifecycle observer observes lifecycle owner component's life cycle , annoted methods
+
+LiveData = observables (data stream, transformation) + has relationshio to lifecycle aware (so that can control when to notify Observer / stop )
+    -> the observe function requires observer and a lifecycle owner
+
+ViewModel = data provider that persists across UI components configuration changes 
+            provide livedata to UI components
+
+Room - > API for ORM in android , provide CRUD annotation , return livedata 
+
